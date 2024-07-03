@@ -1,4 +1,5 @@
 import Slave
+import Second_Slave
 
 print("Hello world")
 
