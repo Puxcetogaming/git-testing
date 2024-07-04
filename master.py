@@ -1,4 +1,5 @@
 import random
+import os
 
 x = 0
 y = 0
@@ -60,6 +61,18 @@ while True:
             break
         case _:
             print("Invalid move")
+
+
+folder_path = '/home/iliyan/Coding folder/git testing/Score' 
+
+if not os.path.exists(folder_path): 
+    os.makedirs(folder_path) 
+
+file_name = 'Last Score.txt'
+file_path = os.path.join(folder_path, file_name) 
+ 
+with open(file_path, 'w') as f: 
+    f.write(f"Last score: {blocksBroken}") 
 
 
 # Game where you move and break blocks
