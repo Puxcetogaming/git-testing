@@ -61,3 +61,6 @@ while True:
             break
         case _:
             print("Invalid move")
+
+
+# Game where you move and break blocks
