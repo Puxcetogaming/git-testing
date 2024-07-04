@@ -1,6 +1,7 @@
 import random
 import os
 
+userName = input("Enter your name: ")
 x = 0
 y = 0
 z = 0
@@ -72,7 +73,7 @@ file_name = 'Last Score.txt'
 file_path = os.path.join(folder_path, file_name) 
  
 with open(file_path, 'w') as f: 
-    f.write(f"Last score: {blocksBroken}") 
+    f.write(f"Last score: {blocksBroken}, Player: {userName} \n") 
 
 
 # Game where you move and break blocks
